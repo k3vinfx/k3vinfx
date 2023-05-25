@@ -89,11 +89,12 @@ namespace Oz_Cam.VISTAS
 
 
             int x = 0;
-            for (int y = 4; y < 8; y++)
+            for (int y = 5; y < 8; y++)
             {
                 x += Convert.ToInt16(dgv_1.Rows[totalFilas - 1].Cells[y].Value);
+               // MessageBox.Show("Valor" + x);
             }
-            x = x * 10;
+             x = x * 15;
 
             txtValor.Text = x.ToString();
 
@@ -148,6 +149,18 @@ namespace Oz_Cam.VISTAS
            // Thread.Sleep(500); // Pausa de 500 milisegundos (opcional)
             AutoItX.MouseClick("left", 2197, 749, 1);
        
+        }
+
+        private void btn_WP_Click(object sender, EventArgs e)
+        {
+            string texto = txtWhatapp.Text;
+            Clipboard.SetText(texto);
+        }
+
+        private void btn_QR_Click(object sender, EventArgs e)
+        {
+            string texto = txtValor.Text;
+            Clipboard.SetText(texto);
         }
     }
 }

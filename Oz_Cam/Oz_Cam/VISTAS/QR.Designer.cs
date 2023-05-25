@@ -57,6 +57,8 @@ namespace Oz_Cam.VISTAS
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btn_WP = new System.Windows.Forms.Button();
+            this.btn_QR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -65,9 +67,10 @@ namespace Oz_Cam.VISTAS
             // 
             // btnUltimos
             // 
-            this.btnUltimos.Location = new System.Drawing.Point(13, 179);
+            this.btnUltimos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUltimos.Location = new System.Drawing.Point(21, 178);
             this.btnUltimos.Name = "btnUltimos";
-            this.btnUltimos.Size = new System.Drawing.Size(97, 23);
+            this.btnUltimos.Size = new System.Drawing.Size(110, 23);
             this.btnUltimos.TabIndex = 23;
             this.btnUltimos.Text = "Primero en FIFO";
             this.btnUltimos.UseVisualStyleBackColor = true;
@@ -85,18 +88,20 @@ namespace Oz_Cam.VISTAS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 106);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "Estado Pago";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 80);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(56, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Pago";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -104,37 +109,48 @@ namespace Oz_Cam.VISTAS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 53);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(34, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Whatapp";
             // 
             // txtEstado
             // 
+            this.txtEstado.BackColor = System.Drawing.Color.Black;
+            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtEstado.Location = new System.Drawing.Point(98, 103);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.Size = new System.Drawing.Size(160, 22);
             this.txtEstado.TabIndex = 14;
             // 
             // txtPago
             // 
+            this.txtPago.BackColor = System.Drawing.Color.Black;
+            this.txtPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtPago.Location = new System.Drawing.Point(98, 77);
             this.txtPago.Name = "txtPago";
-            this.txtPago.Size = new System.Drawing.Size(100, 20);
+            this.txtPago.Size = new System.Drawing.Size(100, 22);
             this.txtPago.TabIndex = 13;
             this.txtPago.TextChanged += new System.EventHandler(this.txtToken_TextChanged);
             // 
             // txtWhatapp
             // 
+            this.txtWhatapp.BackColor = System.Drawing.Color.Black;
+            this.txtWhatapp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtWhatapp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtWhatapp.Location = new System.Drawing.Point(98, 51);
             this.txtWhatapp.Name = "txtWhatapp";
-            this.txtWhatapp.Size = new System.Drawing.Size(100, 20);
+            this.txtWhatapp.Size = new System.Drawing.Size(100, 22);
             this.txtWhatapp.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(116, 179);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(148, 178);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 24;
@@ -145,14 +161,17 @@ namespace Oz_Cam.VISTAS
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 21);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 13);
+            this.label5.Size = new System.Drawing.Size(166, 16);
             this.label5.TabIndex = 25;
             this.label5.Text = "Mandar a sus Whatapp";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_QR);
+            this.groupBox1.Controls.Add(this.btn_WP);
             this.groupBox1.Controls.Add(this.dgv_1);
             this.groupBox1.Controls.Add(this.txtValor);
             this.groupBox1.Controls.Add(this.label4);
@@ -166,9 +185,10 @@ namespace Oz_Cam.VISTAS
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(21, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(6, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(683, 251);
+            this.groupBox1.Size = new System.Drawing.Size(940, 224);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Primera Etapa";
@@ -180,27 +200,31 @@ namespace Oz_Cam.VISTAS
             this.dgv_1.AllowUserToResizeColumns = false;
             this.dgv_1.AllowUserToResizeRows = false;
             this.dgv_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_1.Location = new System.Drawing.Point(235, 51);
+            this.dgv_1.Location = new System.Drawing.Point(273, 14);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
-            this.dgv_1.Size = new System.Drawing.Size(429, 150);
+            this.dgv_1.Size = new System.Drawing.Size(661, 197);
             this.dgv_1.StandardTab = true;
             this.dgv_1.TabIndex = 27;
             // 
             // txtValor
             // 
+            this.txtValor.BackColor = System.Drawing.Color.Black;
             this.txtValor.Enabled = false;
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.txtValor.Location = new System.Drawing.Point(98, 129);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.Size = new System.Drawing.Size(76, 22);
             this.txtValor.TabIndex = 26;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 132);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 27;
             this.label4.Text = "Valor del Qr";
             // 
@@ -219,9 +243,9 @@ namespace Oz_Cam.VISTAS
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(21, 269);
+            this.groupBox2.Location = new System.Drawing.Point(6, 235);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(683, 251);
+            this.groupBox2.Size = new System.Drawing.Size(940, 222);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Primera Etapa";
@@ -233,10 +257,10 @@ namespace Oz_Cam.VISTAS
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(235, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(273, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(661, 204);
             this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 27;
             // 
@@ -343,11 +367,34 @@ namespace Oz_Cam.VISTAS
             this.label10.TabIndex = 17;
             this.label10.Text = "Estado Pago";
             // 
+            // btn_WP
+            // 
+            this.btn_WP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_WP.Location = new System.Drawing.Point(204, 49);
+            this.btn_WP.Name = "btn_WP";
+            this.btn_WP.Size = new System.Drawing.Size(63, 23);
+            this.btn_WP.TabIndex = 28;
+            this.btn_WP.Text = "Wp Copy";
+            this.btn_WP.UseVisualStyleBackColor = true;
+            this.btn_WP.Click += new System.EventHandler(this.btn_WP_Click);
+            // 
+            // btn_QR
+            // 
+            this.btn_QR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QR.Location = new System.Drawing.Point(180, 129);
+            this.btn_QR.Name = "btn_QR";
+            this.btn_QR.Size = new System.Drawing.Size(87, 22);
+            this.btn_QR.TabIndex = 29;
+            this.btn_QR.Text = "QR Valor Copy";
+            this.btn_QR.UseVisualStyleBackColor = true;
+            this.btn_QR.Click += new System.EventHandler(this.btn_QR_Click);
+            // 
             // QR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1295, 704);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(950, 463);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "QR";
@@ -393,5 +440,7 @@ namespace Oz_Cam.VISTAS
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn_QR;
+        private System.Windows.Forms.Button btn_WP;
     }
 }

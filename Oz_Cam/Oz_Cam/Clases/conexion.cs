@@ -81,7 +81,7 @@ namespace Oz_Cam.Clases
         {
             conexion.ConnectionString = CadenaConexion;
             conexion.Open();
-            string comando = "Select * from clientes_camoz Where pago = 'QR' and confirmacion_pago = 'No'  ORDER BY id_cliente DESC";
+            string comando = "Select * from clientes_camoz Where tipo_pago= 'QR' and confirmacion_pago = 'PENDIENTE'  ORDER BY id_cliente DESC";
             MySqlCommand cmd = new MySqlCommand(comando, conexion);
             MySqlDataAdapter da = new MySqlDataAdapter(comando, conexion);
             DataSet dt = new DataSet();
